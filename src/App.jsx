@@ -1,13 +1,14 @@
 import { useState } from 'react'
-import './App.css'
+import './index.css'
 import { fetchPhotos } from './api/mediaApi'
+import SearchBar from './components/SearchBar'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='h-screen w-full bg-zinc-600'>
-      
+    <div className='h-screen w-full bg-zinc-900'>
+      < SearchBar />
     </div>
   )
 }
