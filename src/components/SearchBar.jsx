@@ -25,7 +25,8 @@ const SearchBar = () => {
                 required
                 className='w-full border-2 px-6 py-3 text-xl rounded outline-none'
                 type="text"
-                placeholder='Search for results...' />
+                placeholder='Search for results...' 
+            />
 
             <button className='active:scale-95 cursor-pointer border-2 px-6 py-3 text-xl rounded outline-none'>Search</button>
         </form>
