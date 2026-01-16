@@ -1,16 +1,18 @@
 import { useState } from 'react'
 import './index.css'
-import { fetchPhotos } from './api/mediaApi'
-import SearchBar from './components/SearchBar'
-import ResultGrid from './components/ResultGrid'
-import Tabs from './components/Tabs'
+import { Route, Routes } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import CollectionPage from './pages/CollectionPage'
+
 function App() {
   
 
   return (
-    <div className='h-screen w-full bg-zinc-900'>
-      < SearchBar />
-      <Tabs/>
+    <div className='h-full w-full bg-zinc-900'>
+      <Routes>
+        <Route path='/' element={< HomePage/>} />
+        <Route path='/collection' element={<CollectionPage />} />
+      </Routes>
     </div>
   ) 
 }

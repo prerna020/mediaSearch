@@ -13,10 +13,10 @@ const SearchBar = () => {
         setText('')
     }
   return (
-    <div >
+    <div>
         <form onSubmit={(e) => {
             submitHandler(e)
-        }} className='flex text-white bg-cyan-700 gap-5 py-10 px-10'>
+        }} className='flex text-white bg-zinc-900 gap-5 py-10 px-10'>
             <input
                 value={text}
                 onChange={(e) => {
