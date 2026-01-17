@@ -1,7 +1,11 @@
+import { useDispatch } from 'react-redux'
+import { addCollection } from '../redux/features/collectionSlice'
 
 const ResultCard = ({item}) => {
+    const dispatch = useDispatch()
     const addToCollection = (item) => {
-
+        dispatch(addCollection(item))
+        dispatch(addedToast())
     }
     return (
         <div className="relative w-70 h-70 bg-blue-300 rounded-2xl overflow-hidden">
